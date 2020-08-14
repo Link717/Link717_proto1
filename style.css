@@ -57,7 +57,7 @@ body {
   }
 
   /*마우스오버 효과내기*/
-  .gallery1_1 {
+  .gallery1 {
     display: flex;
     margin-top: 125px;
     flex-wrap: nowrap;
@@ -67,15 +67,7 @@ body {
     transition: opacity 1s;
   }
 
-  .gallery1_2 {
-    display: flex;
-    margin-top: 125px;
-    flex-wrap: nowrap;
-    position: absolute;
-    justify-content: center;
-  }
-
-  .gallery1_1:hover {
+  .gallery1:hover {
     opacity: 1; 
   }
 
