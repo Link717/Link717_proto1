@@ -14,15 +14,18 @@ body {
   
   .nav a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none; /*hyper link 기본 효과 없앰*/
     font-family: 'Oswald', sans-serif;
   }
+
 
   .nav a:hover {
     color: #e68224;
   }
   
   ul {
+    display: flex;
+    list-style: none;
     margin: 23px auto;
     padding: 0 20px;
     text-align: center;
@@ -31,10 +34,9 @@ body {
   li {
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 400;
     text-transform: uppercase;
-    display: inline-block;
     width: 350px;
   }
 
@@ -44,8 +46,7 @@ body {
     font-size: 18px;
     text-align: center;
     font-weight: 700;
-    text-transform: uppercase;
-    padding: 35px;
+    width: 100%;
   }
 
   p {
@@ -55,12 +56,29 @@ body {
     font-weight: 1000;
   }
 
-  .gallery1 {
+  /*마우스오버 효과내기*/
+  .gallery1_1 {
     display: flex;
     margin-top: 125px;
     flex-wrap: nowrap;
+    position: relative;
+    justify-content: center;
+    opacity: 0.5;
+    transition: opacity 1s;
+  }
+
+  .gallery1_2 {
+    display: flex;
+    margin-top: 125px;
+    flex-wrap: nowrap;
+    position: absolute;
     justify-content: center;
   }
+
+  .gallery1_1:hover {
+    opacity: 1; 
+  }
+
 
   .gallery2 {
     display: flex;
@@ -77,19 +95,24 @@ body {
   .gallery3 {
     display: flex;
     margin-top: 150px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
   .gallery-item3 img {
-    width: 310px;
-    height: 250px;
+    width: 280px;
+    height: 230px;
   }
+
   footer {
+  display: flex;
+  position: absolute; /*footer 하단 고정*/
+  align-items: center;
   background-color: #f8ff95;
-  text-align: center;
-  height: 100px;
-}
+  height: 75px;
+  width: 100%;
+  bottom: 0;
+  }
 
   .em {
     box-sizing: border-box;
@@ -108,12 +131,3 @@ body {
     text-transform: uppercase;
   }
 
-  /*
-
-
-  .gallery-item {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    position: relative;
-  }
