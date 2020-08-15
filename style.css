@@ -96,7 +96,7 @@ body {
   }
 
   footer {
-  display: flex;
+  display: inline;
   position: absolute; /*footer 하단 고정*/
   align-items: center;
   background-color: #f8ff95;
