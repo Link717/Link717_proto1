@@ -59,12 +59,20 @@ body {
   /* main page 마우스오버 효과내기, 버벅거리는 증상이 있음 수정필요*/
   .gallery1 {
     display: flex;
-    margin-top: 125px;
+    margin-top: 150px;
     flex-wrap: nowrap;
     position: relative;
     justify-content: center;
     opacity: 0.5;
     transition: opacity 0.5s;
+  }
+
+  .gallery1 img {
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    width: auto\9; /* ie8 */
+    justify-items: center;
   }
 
   .gallery1:hover {
