@@ -43,7 +43,7 @@ body {
   h3 {
     color: #708b3c;
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
     font-weight: 700;
     width: 100%;
@@ -56,7 +56,7 @@ body {
     font-weight: 1000;
   }
 
-  /*마우스오버 효과내기*/
+  /* main page 마우스오버 효과내기, 버벅거리는 증상이 있음 수정필요*/
   .gallery1 {
     display: flex;
     margin-top: 125px;
